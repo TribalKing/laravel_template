@@ -12,3 +12,14 @@
 */
 
 Route::get('/', 'HomeController@index');
+
+/*
+|--------------------------------------------------------------------------
+| Email System
+|--------------------------------------------------------------------------
+|
+| Here is where you can send emails.
+|
+*/
+
+Route::post('/send-email', 'MailController@sendEmail');

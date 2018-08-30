@@ -8,13 +8,10 @@ use Illuminate\Support\Facades\Mail;
 class MailController extends Controller
 {
 
-    /*
-    |--------------------------------------------------------------------------
-    | Send Email
-    |--------------------------------------------------------------------------
-    |
-    | Sending email from home page, contact section
-    |
+    /**
+    * Send email - Needed parameters (title, content, subject, from, to)
+    * @param $request Request
+    * @return string
     */
     public function sendEmail(Request $request)
     {
